@@ -296,6 +296,17 @@
   
   .main__img--container {
     text-align: center;
+    font-size: 2rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    p {
+      font-size: 1.2rem;
+    }
   }
   
   #main__img {

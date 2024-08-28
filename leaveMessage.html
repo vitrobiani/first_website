@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vitrobiani</title>
@@ -16,8 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
+</head>
+<body>
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
@@ -36,35 +36,24 @@
           <li class="navbar__item"> 
             <a href="/cv.html" class="navbar__links">Show CV</a>
           </li>
-          <li class="navbar__btn"><a href="/" class="button">Download CV</a></li>
+          <li class="navbar__btn"><a href="cv.pdf" class="button" download="cv.pdf">Download CV</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Hero Section -->
     <div class="main">
       <div class="main__container">
         <div class="main__content">
-          <h1>Project Showcase</h1>
-          </i><button class="main__btn"><a href="https://github.com/vitrobiani"></i>My GitHub Page</a></button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Services Section -->
-    <div class="services">
-      <div class="services__container">
-        <div class="services__card">
-          <img src="images/compiler.png" alt="" height="340" width="400">
-          <h2>The GDO compiler</h2>
-          <p>a simple compiler written in python</p>
-          <button class="main__btn"><a href="https://github.com/vitrobiani/gdo_compiler_py">GitHub</a></button>
-        </div>
-        <div class="services__card">
-          <h2>Database Project</h2>
-          <img src="images/Databases.png" alt="" height="340" width="400">
-          <p>a postgres database project implemented on a store management application</p>
-          <button class="main__btn"><a href="https://github.com/vitrobiani/DatabasesProject">GitHub</a></button>
+            <h2>Contact Us</h2>
+            <form action="sendmail.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
         </div>
       </div>
     </div>
@@ -74,36 +63,17 @@
       <div class="footer__links">
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
-            <h2>About Us</h2>
-            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
-            <a href="/">Careers</a> <a href="/">Investments</a>
-            <a href="/">Terms of Service</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Contact Us</h2>
-            <a href="/">Contact</a> <a href="/">Support</a>
-            <a href="/">Destinations</a> <a href="/">Sponsorships</a>
-          </div>
-        </div>
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>Videos</h2>
-            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
-            <a href="/">Agency</a> <a href="/">Influencer</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Social Media</h2>
-            <a href="/">Instagram</a> <a href="/">Facebook</a>
-            <a href="/">Youtube</a> <a href="/">Twitter</a>
+            <h2>Contact Me</h2>
+            <a href="mailto:vitrobiani#gmail.com">Mail Me</a> <a href="/">Leave a message</a>
           </div>
         </div>
       </div>
       <section class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            <a href="/" id="footer__logo"><i class="fas fa-gem"></i>NEXT</a>
+            <a href="/" id="footer__logo"><img src="images/anthropology.png" width="42" height="42"></i>VITROBIANI</a>
           </div>
-          <p class="website__rights">© NEXT 2020. All rights reserved</p>
+          <p class="website__rights">© vitrobiani 2024</p>
           <div class="social__icons">
             <a
               class="social__icon--link"
@@ -111,7 +81,7 @@
               target="_blank"
               aria-label="Facebook"
             >
-              <i class="fab fa-facebook"></i>
+              <i class="fa-solid fa-envelope"></i>
             </a>
             <a
               class="social__icon--link"
@@ -150,5 +120,6 @@
       </section>
     </div>
     <script src="app.js"></script>
-  </body>
+    
+</body>
 </html>
