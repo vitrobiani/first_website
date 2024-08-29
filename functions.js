@@ -10,15 +10,12 @@ function loadhtml(filename, id) {
 let savedValue = 'empty.html';
 
 function saveValue(value) {
-    console.log(value + " saved");
     savedValue = value;
     localStorage.setItem('savedValue', value);
 }
 
 function loadhtmlSavedValue(id) {
     let savedValue1 = localStorage.getItem('savedValue') || 'empty.html';
-    console.log(savedValue1);
-    console.log("omer");
 
     fetch(savedValue1)
     .then(response => response.text())
