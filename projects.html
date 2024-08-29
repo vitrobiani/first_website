@@ -1,75 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo"><img src="images/anthropology.png" class="mainimg" width="40" height="40">VITROBIANI</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/projects.html" class="navbar__links">Projects</a>
-          </li>
-          <li class="navbar__item"> 
-            <a href="/cv.html" class="navbar__links">Show CV</a>
-          </li>
-          <li class="navbar__btn"><a href="/" class="button">Download CV</a></li>
-        </ul>
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type = "text/javascript" src="functions.js"></script>
+    <title>Loruki | Cloud Hosting For Everyone</title>
+</head>
+<body>
+    <div id="nav"></div>
+    <script>loadhtml("nav.html", "nav")</script>
 
-    <!-- Hero Section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>Project Showcase</h1>
-          </i><button class="main__btn"><a href="https://github.com/vitrobiani"></i>My GitHub Page</a></button>
+    <!-- Head -->
+    <section class="docs-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="xl">Projects</h1>
+                <p class="lead">
+                    These are some of my Projects, everything is open feel free to use anything!
+                </p>
+            </div>
+            <img src="images/docs.png" alt="">
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Services Section -->
-    <div class="services">
-      <div class="services__container">
-        <div class="services__card">
-          <img src="images/compiler.png" alt="" height="340" width="400">
-          <h2>The GDO compiler</h2>
-          <p>a simple compiler written in python</p>
-          <button class="main__btn"><a href="https://github.com/vitrobiani/gdo_compiler_py">GitHub</a></button>
-        </div>
-        <div class="services__card">
-          <h2>Database Project</h2>
-          <img src="images/Databases.png" alt="" height="340" width="400">
-          <p>a postgres database project implemented on a store management application</p>
-          <button class="main__btn"><a href="https://github.com/vitrobiani/DatabasesProject">GitHub</a></button>
-        </div>
-      </div>
-    </div>
 
+    <!-- Projects menu -->
+    <section class="docs-main my-4">
+        <div class="container grid">
+            <div class="card bg-light p-3">
+                <div id="opts"></div>
+            </div>
+            <div class="card">
+                <div id="proj"></div>
+            </div>
+        </div>
+    </section>
+    <script>loadhtml("ProjectsMenuOptions.html", "opts")</script>
+    <script>loadhtmlSavedValue("proj")</script>
+    
     <div id="footer"></div>
-    <script src="app.js"></script>
-  </body>
+    <script>loadhtml("footer.html", "footer")</script>
+</body>
 </html>
