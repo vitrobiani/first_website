@@ -12,10 +12,12 @@ let savedValue = 'empty.html';
 function saveValue(value) {
     savedValue = value;
     localStorage.setItem('savedValue', value);
+    loadhtmlSavedValue("proj");
 }
 
 function loadhtmlSavedValue(id) {
     let savedValue1 = localStorage.getItem('savedValue') || 'empty.html';
+    console.log(savedValue1);
 
     fetch(savedValue1)
     .then(response => response.text())
