@@ -81,6 +81,12 @@ a#navbar__logo {
   font-weight: bold;
 }
 
+@media (max-width: 320px) {
+  .navbar ul {
+    font-size: 15px;
+  }
+}
+
 .mainimg {
   margin-right: 4px;
 }

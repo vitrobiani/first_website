@@ -5,6 +5,10 @@
   padding: 0 40px;
 }
 
+pre{
+  line-height: 200%;
+}
+
 .card {
   background-color: #fff;
   color: #333;
@@ -18,8 +22,8 @@
   display: inline-block;
   background-color: var(--dark-color);
   color: #fff;
-  font-size: medium;
   border-radius: 5px;
+  text-align: center;
 }
 
 .btn {

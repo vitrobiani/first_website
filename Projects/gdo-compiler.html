@@ -1,20 +1,51 @@
     <h2>Overview</h2>
-    <p>This is an interpertor written in python for a programing languages class.</p>
+    <p>This is an interpreter written in python for a programing languages class.</p>
 
-    <h3>Lorem, ipsum dolor.</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima totam magni eius vitae velit id, atque veritatis! At, vero porro.</p>
-    <a href="#" class="btn btn-primary">Install CLI</a>
+    <h3>What Does It Do</h3>
+    <p>This interpreter acts sort of like most other interpreted languages (such as python). </p>
+    <p>You can use it as interpreter to write line by line commands (like python or bash),
+        and you can also use it like a "compiler" to feed it a code document (ending in .lambda)
+        and it will interpret it line by line (not exactly compiling but close enough).
+    </p>
+    <a href="https://github.com/vitrobiani/gdo_compiler_py" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i>Project's Github</a>
 
-    <h3>Requirements</h3>
-    <ul>
-        <li>Windows 10, Mac OSX, Linux</li>
-        <li>Node.js v12 or higher</li>
-    </ul>
+    <p>The project was written in pycharm and so the environment is best suited for that if 
+        you wish to pull the repo from github.
+        But, it should work in any environment so long you download the dependencies.
+    </p>
 
-    <h3>Install</h3>
-    <p>Mac (Homebrew)</p>
-    <pre><code>$ brew install loruki-cli</code></pre>
-    <p>NPM</p>
-    <pre><code>$ npm install loruki-cli</code></pre>
-    <p>Yarn</p>
-    <pre><code>$ yarn install loruki-cli</code></pre>
+    <h3>download PLY</h3>
+    <p>For Debian based systems: (Ubuntu, Popos etc.)</p>
+    <pre><code>$ sudo apt install python3-ply</code></pre>
+
+
+    <p>For nix</p>
+    <p>Just add this to your nix config or home-manager, or open a nix-shell</p>
+    <pre><code>// For config
+  environment.systemPackages = [
+    pkgs.python312Packages.ply
+  ];
+// home-manager
+  home.packages = [
+    pkgs.python312Packages.ply
+  ];
+// nix-shell in the commandline
+  nix-shell -p python312Packages.ply</code></pre>
+
+  <h3>Download the executable</h3>
+  <p>You could also simply download the executable from github or from here:</p>
+
+  <a href="/assets/lambda.exe" class="btn btn-primary" download="lambda.exe">Download</a>
+  <p class="italic">normaly i would advise you to never execute programs from unknown sources and today is no different</p>
+
+
+  <ul>
+  <li>I reccomend to take a look at the <u><a href="https://github.com/vitrobiani/gdo_compiler_py/tree/main?tab=readme-ov-file#documentation" target="_blank">documentation</a></u> for more information.</li>
+  <li>and look at the <u><a href="https://github.com/vitrobiani/gdo_compiler_py/tree/main?tab=readme-ov-file#bnf-grammer" target="_blank">BNF</a></u> of the language of the interpreter.</li>
+  </ul>
+  <style>
+    .italic {
+        font-style: italic;
+        font-size: small;
+    }
+  </style>
