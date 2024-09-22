@@ -330,7 +330,7 @@ a#navbar__logo {
 /* Animations */
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 
   100% {
@@ -340,7 +340,7 @@ a#navbar__logo {
 
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
 
   100% {
@@ -350,7 +350,7 @@ a#navbar__logo {
 
 @keyframes slideInFromTop {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-80%);
   }
 
   100% {
@@ -360,7 +360,7 @@ a#navbar__logo {
 
 @keyframes slideInFromBottom {
   0% {
-    transform: translateY(100%);
+    transform: translateY(60%);
   }
 
   100% {
