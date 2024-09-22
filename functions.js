@@ -26,3 +26,21 @@ function loadhtmlSavedValue(id) {
     })
     .catch(error => console.error('Error fetching the footer:', error));
 }
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.top <= (window.innerHeight || document.documentElement.clientHeight);
+}
+
+// Function to handle scroll event
+function onScroll() {
+  const fadeInElements = document.querySelectorAll('.fade-in');
+  fadeInElements.forEach(el => {
+    if (isInViewport(el)) {
+      el.classList.add('show');
+    }
+  });
+}
+
+// Listen for scroll events
+window.addEventListener('scroll', onScroll);
