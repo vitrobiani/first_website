@@ -1,0 +1,105 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+}
+/* Sidebar styling */
+#sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: -250px; /* Hidden initially */
+    top: 0;
+    background-color: #003366;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+#sidebar.active {
+    left: 0; /* Visible when active */
+}
+#sidebar button {
+    padding: 15px;
+    text-align: left;
+    background-color: #003366;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+#sidebar button:hover {
+    background-color: #004080;
+}
+/* Sub-menu options */
+.sub-menu {
+    display: none;
+    background-color: #004080;
+}
+.sub-menu button {
+    padding-left: 30px;
+}
+/* Navbar styling */
+#navbar {
+    height: 60px;
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+#navbar button, #navbar a {
+    background-color: #0055a5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+#navbar button:hover, #navbar a:hover {
+    background-color: #004080;
+}
+/* Content styling */
+#main-content {
+    margin-left: 0;
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+#main-content.shifted {
+    margin-left: 250px;
+}
+
+#sidebar .sidemenubtn{
+    font-size: large;
+}
+
+#sidebar .subitem {
+    text-align: center;
+    font-size: medium;
+}
+
+.sidebarbtn {
+    z-index: 999;
+}
+
+.fa-github {
+  margin-right: 3px;
+}
+
+.fa-home {
+  margin-right: 3px;
+  color: red;
+}

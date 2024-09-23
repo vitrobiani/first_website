@@ -183,6 +183,10 @@ a#navbar__logo {
   margin-right: 3px;
 }
 
+.fa-book-open{
+  margin-right: 4px;
+}
+
 .showcase-form {
   position: relative;
   top: 60px;
