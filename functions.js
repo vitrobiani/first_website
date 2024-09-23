@@ -40,6 +40,12 @@ function onScroll() {
       el.classList.add('show');
     }
   });
+  const fadeOutElements = document.querySelectorAll('.fade-out');
+  fadeOutElements.forEach(el => {
+    if (isInViewport(el)) {
+      el.classList.add('hide');
+    }
+  });
 }
 
 // Listen for scroll events

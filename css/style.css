@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+.mouse-icon {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    bottom: 40px;
+    border: 2px solid #0033ff;
+    border-radius: 16px;
+    height: 50px;
+    width: 30px;
+    margin-left: -17px;
+    display: block;
+    z-index: 10;
+}
+
+.mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #9900ff;
+    width: 4px;
+    height: 10px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
 :root {
   --primary-color: #047aed;
   --secondary-color: #1c3fa8;
@@ -57,6 +90,11 @@ pre {
 }
 
 /* Navbar */
+.nav {
+  height: 60px;
+  background-color: #047aed;
+}
+
 .navbar {
   background-color: var(--primary-color);
   color: #fff;
@@ -311,20 +349,30 @@ a#navbar__logo {
   margin: 0 10px;
 }
 
+.footer .footnav {
+  margin-left: -15px;
+  margin-right: 10px;
+}
+
+.footer .footnav a:hover {
+  font-weight: 100;
+  color: #ccc;
+}
+
 .social .fa-github:hover {
-  color: #000000;
+  color: #0092fb;
 }
 
 .social .fa-linkedin:hover {
-  color: #000000;
+  color: #0092fb;
 }
 
 .social .fa-address-card:hover {
-  color: #000000;
+  color: #0092fb;
 }
 
 .social .fa-envelope:hover {
-  color: #000000;
+  color: #0092fb;
 }
 
 /* Animations */
@@ -368,16 +416,57 @@ a#navbar__logo {
   }
 }
 
-/* Initial state: hidden and transparent */
+@keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+      top: 25px;
+      opacity: 0;
+  }
+}
+
+@keyframes rise {
+  100% {
+    top: 5px;
+    opacity: 0;
+  }
+
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  0% {
+      top: 25px;
+      opacity: 0;
+  }
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* When visible */
 .fade-in.show {
   opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-out {
+  opacity: 1;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-out.hide {
+  opacity: 0;
   transform: translateY(0);
 }
 
@@ -389,8 +478,23 @@ a#navbar__logo {
   }
 }
 
+.botpaddocs{
+  padding-bottom: 10%;
+}
+
 /* Tablets and under */
 @media (max-width: 900px) {
+  .mouse-icon {
+    top: 90%;
+  }
+  .mouse-icon .wheel {
+    animation-name: rise;
+  }
+
+  .botpaddocs{
+    padding-bottom: 20%;
+  }
+
   .grid,
   .showcase .grid,
   .stats .grid,
@@ -427,6 +531,8 @@ a#navbar__logo {
   .features-sub-head,
   .docs-head {
     text-align: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
   }
 
   .features-head img,
@@ -442,7 +548,16 @@ a#navbar__logo {
 
 }
 
-
+@media (max-width: 800px) {
+  .mouse-icon {
+    top: 90%;
+  }
+  .docs-head {
+    text-align: center;
+    padding-bottom: 15%;
+    padding-top: 15%;
+  }
+}
 
 
 /* Mobile */
@@ -469,3 +584,20 @@ a#navbar__logo {
   }
 
 }
+
+
+  @media (max-width: 400px) {
+    .gridFoot {
+      flex-direction: column;
+    }
+
+    .footnav {
+      margin-bottom: 20px;
+    }
+
+    .docs-head {
+      text-align: center;
+      padding-bottom: 17%;
+      padding-top: 17%;
+    }
+  }
