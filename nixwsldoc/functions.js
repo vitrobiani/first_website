@@ -5,6 +5,9 @@ function toggleSidebar() {
     const mainContent = document.getElementById('main-content');
     sidebar.classList.toggle('active');
     mainContent.classList.toggle('shifted');
+
+    var menuIcon = document.querySelector('.menu-icon');
+    menuIcon.classList.toggle('change');
 }
 
 // Toggle the visibility of submenu items

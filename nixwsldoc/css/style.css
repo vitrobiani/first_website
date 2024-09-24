@@ -15,6 +15,7 @@ body {
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
+    z-index: 999;
 }
 #sidebar.active {
     left: 0; /* Visible when active */
@@ -60,6 +61,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     font-size: 16px;
+    z-index: 1000;
 
   display: inline-block;
   padding: 10px 30px;
@@ -96,10 +98,9 @@ body {
 }
 
 .fa-github {
-  margin-right: 3px;
+  margin-right: 4px;
 }
 
 .fa-home {
-  margin-right: 3px;
-  color: red;
+  margin-right: 4px;
 }

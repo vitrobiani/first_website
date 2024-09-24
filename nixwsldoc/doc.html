@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <script type = "text/javascript" src="functions.js"></script>
     <title>Sidebar Navigation</title>
@@ -11,7 +13,6 @@
 
     <!-- Sidebar -->
     <div id="sidebar">
-        <button class="btn-primary" onclick="toggleSidebar()">☰ close Sidebar</button>
         <button class="sidemenubtn" onclick="toggleSubMenu('sub1')">Menu 1</button>
         <div class="sub-menu" id="sub1">
             <a href="doc.html" onclick="saveValue('omer.html')"><button class="subitem">Sub-item 1</button></a>
@@ -31,10 +32,10 @@
 
     <!-- Top Navbar -->
     <div id="navbar">
-        <button btn="btn-primary" onclick="toggleSidebar()">☰ Open Sidebar</button>
+        <button onclick="toggleSidebar()">☰</button>
         <div>
             <a href="#" onclick="saveValue('empty.html')"><i class="fa fa-home"></i>Home</a>
-            <a href="#">Option 2</a>
+            <a href="https://github.com/vitrobiani/nixWSL/" target="_blank"><i class="fab fa-github"></i>Github</a>
         </div>
     </div>
 
