@@ -231,8 +231,8 @@ a#navbar__logo {
 .showcase::after {
   content: '';
   position: absolute;
-  height: 100px;
-  bottom: -70px;
+  height: 200px;
+  bottom: -170px;
   right: 0;
   left: 0;
   background: #fff;
