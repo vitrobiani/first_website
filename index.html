@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <script type = "text/javascript" src="functions.js"></script>
     <title>vitrobiani</title>
 </head>
@@ -29,7 +30,8 @@
 
             <div class="showcase-form card">
                 <h2>Leave Me A Message</h2>
-                 <form action="https://formspree.io/f/mnnawgde" method="post">
+                 <!-- <form action="https://formspree.io/f/mnnawgde" method="post"> -->
+                <form action="https://send.pageclip.co/NvNkX0bXyI0SKA26Yp7dKM7repUMAzyK/contact-form" class="pageclip-form" method="post">
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
@@ -39,7 +41,7 @@
                     <div class="form-control">
                         <textarea id="message" name="message" placeholder="Message" required></textarea>
                     </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
+                    <input type="submit" value="Send" class="pageclip-form__submit">
                 </form>
             </div>
         </div>
@@ -69,5 +71,6 @@
 
     <div id="footer"></div>
     <script>loadhtml("footer.html", "footer")</script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 </html>
