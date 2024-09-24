@@ -363,6 +363,10 @@ a#navbar__logo {
   color: #ccc;
 }
 
+.footer {
+  overflow: var(--dark-color);
+}
+
 .social .fa-github:hover {
   color: #0092fb;
 }
@@ -454,7 +458,7 @@ a#navbar__logo {
 
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(0px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
