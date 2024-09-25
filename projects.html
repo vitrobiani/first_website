@@ -12,9 +12,11 @@
 </head>
 <body>
 
-    <div id="nav" style="height: 60px; background-color: #047aed;"></div>
+    <div id="nav" style="height: 60px; background-color: var(--primary-color);"></div>
     <div id="nav"></div>
     <script>loadhtml("nav.html", "nav")</script>
+
+<button class="dark-toggle" type="button" data-theme-toggle aria-label=""></button>
 
     <!-- Head -->
     <section class="docs-head bg-primary py-4">
@@ -50,5 +52,7 @@
     
     <div id="footer"></div>
     <script>loadhtml("footer.html", "footer")</script>
+
+    <script src="darktheme.js"></script>
 </body>
 </html>

@@ -1,5 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+
+[data-theme="light"] {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --text-color: #000;
+  --background-color: #f4f4f4;
+}
+
+[data-theme="dark"] {
+  --primary-color: #042bed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --text-color: #fff;
+  --background-color: #000;
+}
+
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  padding: -10px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: var(--background-color);
+}
+
+.dark-toggle {
+  position: fixed;       
+  bottom: 20px;          
+  right: 20px;           
+  padding: 5px 15px;    
+  background-color: var(--secondary-color);
+  color: #fff;           
+  border: 2px;          
+  border-radius: 10px;    
+  cursor: pointer;       
+  z-index: 1000;         
+  font-size: larger;
+  font-weight: bold;
+}
+
 .mouse-icon {
     position: absolute;
     justify-content: center;
@@ -7,7 +61,7 @@
     left: 50%;
     top: 50%;
     bottom: 40px;
-    border: 2px solid #0033ff;
+    border: 2px solid var(--light-color);
     border-radius: 16px;
     height: 50px;
     width: 30px;
@@ -19,7 +73,7 @@
 .mouse-icon .wheel {
     position: relative;
     border-radius: 10px;
-    background: #9900ff;
+    background: var(--light-color);
     width: 4px;
     height: 10px;
     top: 4px;
@@ -33,26 +87,7 @@
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
-:root {
-  --primary-color: #047aed;
-  --secondary-color: #1c3fa8;
-  --dark-color: #002240;
-  --light-color: #f4f4f4;
-  --success-color: #5cb85c;
-  --error-color: #d9534f;
-}
 
-* {
-  box-sizing: border-box;
-  padding: -10px;
-  margin: 0px;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
 
 ul {
   list-style-type: none;
@@ -119,6 +154,10 @@ a#navbar__logo {
   font-weight: bold;
 }
 
+.darkmode--activated card{
+    filter: invert(0) !important;
+}
+
 @media (max-width: 320px) {
   .navbar ul {
     font-size: 15px;
@@ -142,12 +181,24 @@ a#navbar__logo {
 }
 
 
+
+
+
+
+
+
 /* Showcase */
 .showcase {
   height: 400px;
   background-color: var(--primary-color);
   color: #fff;
   position: relative;
+}
+
+.darkmode--activated showcase{
+  .showcase{
+    background-color: var(--primary-color);
+  }
 }
 
 .showcase h1 {
@@ -235,7 +286,7 @@ a#navbar__logo {
   bottom: -170px;
   right: 0;
   left: 0;
-  background: #fff;
+  background: var(--background-color);
   transform: skewY(-3deg);
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
@@ -279,6 +330,9 @@ a#navbar__logo {
 }
 
 /* Languages */
+.languages {
+  color: var(--text-color);
+}
 
 .languages .flex {
   flex-wrap: wrap;
@@ -615,3 +669,4 @@ a#navbar__logo {
     top: 80%;
   }
   }
+

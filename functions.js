@@ -50,3 +50,4 @@ function onScroll() {
 
 // Listen for scroll events
 window.addEventListener('scroll', onScroll);
+

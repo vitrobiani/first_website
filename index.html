@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <script type = "text/javascript" src="functions.js"></script>
+    <!-- <script src="dark.js"></script> -->
     <title>vitrobiani</title>
 </head>
 <body>
-    <div id="nav" style="height: 120px; background-color: #047aed;"></div>
+    <div id="nav" style="height: 120px; background-color: var(--primary-color);"></div>
     <div id="nav"></div>
     <script>loadhtml("nav.html", "nav")</script>
+
+    <button class="dark-toggle" type="button" data-theme-toggle aria-label=""></button>
     
     <!-- Showcase -->
     <section class="showcase">
@@ -73,6 +76,12 @@
 
     <div id="footer"></div>
     <script>loadhtml("footer.html", "footer")</script>
+
+
+
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
+    <script src="darktheme.js"></script>
+
 </body>
 </html>
