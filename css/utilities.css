@@ -23,8 +23,24 @@ pre{
   display: inline-block;
   background-color: var(--dark-color);
   color: #fff;
-  border-radius: 5px;
+  border-radius: 4px;
   text-align: center;
+}
+
+.btn-top::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Height of the underline */
+    background: var(--light-color); /* Color of the underline */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.btn-top:hover::after {
+    transform: scaleX(.95);
 }
 
 .btn {

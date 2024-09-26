@@ -14,7 +14,7 @@
 
 [data-theme="dark"] {
   --primary-color: #042bed;
-  --secondary-color: #1c3fa8;
+  --secondary-color: #1c98a8;
   --dark-color: #002240;
   --light-color: #f4f4f4;
   --success-color: #5cb85c;
@@ -95,8 +95,29 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: var(--secondary-color);
+  position: relative;
 }
+.underline-effect {
+    display: inline-block; /* Required for the effect */
+}
+
+.underline-effect::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px; /* Height of the underline */
+    background: black; /* Color of the underline */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.underline-effect:hover::after {
+    transform: scaleX(1);
+}
+
 h1,
 h2 {
   font-weight: 300;
@@ -154,10 +175,6 @@ a#navbar__logo {
   font-weight: bold;
 }
 
-.darkmode--activated card{
-    filter: invert(0) !important;
-}
-
 @media (max-width: 320px) {
   .navbar ul {
     font-size: 15px;
@@ -168,10 +185,6 @@ a#navbar__logo {
   margin-right: 4px;
    -webkit-filter: invert(1);
    filter: invert(1);
-}
-
-.navbar ul a:hover {
-  border-bottom: 2px #fff solid;
 }
 
 .navbar .flex {
