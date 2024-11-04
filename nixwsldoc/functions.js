@@ -13,7 +13,17 @@ function toggleSidebar() {
 // Toggle the visibility of submenu items
 function toggleSubMenu(subMenuId) {
     const subMenu = document.getElementById(subMenuId);
-    subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+    subMenu.style.display = subMenu.style.display === 'none' ? 'block' : 'none';
+}
+
+function filterItems() {
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const items = document.querySelectorAll('.subitem');
+
+    items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(query) ? '' : 'none';
+    });
 }
 
 let nixDocSavedValue = 'empty.html';
