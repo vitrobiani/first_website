@@ -1,0 +1,1 @@
+C:\Users\omer_\RustroverProjects\macroquad_game_\target\wasm32-unknown-unknown\debug\macroquad_game_.wasm: C:\Users\omer_\RustroverProjects\macroquad_game_\src\cards.rs C:\Users\omer_\RustroverProjects\macroquad_game_\src\main.rs

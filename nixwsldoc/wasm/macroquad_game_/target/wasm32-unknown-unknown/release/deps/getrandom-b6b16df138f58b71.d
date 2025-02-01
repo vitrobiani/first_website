@@ -1,0 +1,11 @@
+C:\Users\omer_\RustroverProjects\macroquad_game_\target\wasm32-unknown-unknown\release\deps\libgetrandom-b6b16df138f58b71.rmeta: C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\lib.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\backends.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\error.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\util.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\../README.md
+
+C:\Users\omer_\RustroverProjects\macroquad_game_\target\wasm32-unknown-unknown\release\deps\libgetrandom-b6b16df138f58b71.rlib: C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\lib.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\backends.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\error.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\util.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\../README.md
+
+C:\Users\omer_\RustroverProjects\macroquad_game_\target\wasm32-unknown-unknown\release\deps\getrandom-b6b16df138f58b71.d: C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\lib.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\backends.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\error.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\util.rs C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\../README.md
+
+C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\lib.rs:
+C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\backends.rs:
+C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\error.rs:
+C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\util.rs:
+C:\Users\omer_\.cargo\registry\src\index.crates.io-6f17d22bba15001f\getrandom-0.3.1\src\../README.md:

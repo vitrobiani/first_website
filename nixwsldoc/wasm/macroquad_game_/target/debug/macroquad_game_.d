@@ -1,0 +1,1 @@
+C:\Users\omer_\RustroverProjects\macroquad_game_\target\debug\macroquad_game_.exe: C:\Users\omer_\RustroverProjects\macroquad_game_\src\cards.rs C:\Users\omer_\RustroverProjects\macroquad_game_\src\main.rs
